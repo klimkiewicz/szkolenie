@@ -1,5 +1,5 @@
 from hashlib import sha1
-SECRET_KEY = 'asdha1293718u3j1d01d19dj120jd1212741829d'
+SECRET_KEY = 'asdha1293718u3j1d01d19dj120jd12d'
 
 def sign_args(args):
 	signature = str(args.to_dict()) + SECRET_KEY
