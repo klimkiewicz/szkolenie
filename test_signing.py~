@@ -11,6 +11,7 @@ class SigningTestCase(unittest.TestCase):
             'user_id': 1,
         }
 	k = MultiDict(to_sign)
+	print k.to_dict()
         signed = sign_args(k)
         self.assertTrue(check_signature(signed))
 

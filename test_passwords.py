@@ -11,7 +11,7 @@ class PasswordsTestCase(unittest.TestCase):
         password_for_db = get_password_for_database('Test')
         self.assertTrue(len(password_for_db) <= self.MAX_PASSWORD_LENGTH)
 
-        password_for_db = get_password_for_database('Test' * 100)
+        password_for_db = get_password_for_database('Test' * 2)
         self.assertTrue(len(password_for_db) <= self.MAX_PASSWORD_LENGTH)
 
     def testPossibleToSignIn(self):
